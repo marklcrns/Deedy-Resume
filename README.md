@@ -35,6 +35,39 @@ This template attempts to **look clean**, highlight **details**, be a **single p
 3. **Overleaf**.com (formerly **WriteLatex**.com) (v1 fonts/colors changed) - [compilable online](https://www.writelatex.com/templates/deedy-resume/sqdbztjjghvz#.U2H9Kq1dV18)
 4. **ShareLatex**.com (v1 fonts changes) - [compilable online](https://www.sharelatex.com/templates/cv-or-resume/deedy-resume)
 
+## Usage
+
+There are multiple ways to compile XeLaTeX files but these are just some of the
+ways to do it.
+
+### Compiling Using `texlive-xelatex`
+
+```bash
+# For OpenFonts in the `OpenFonts` directory
+xelatex -output-directory=<output-dir> deedy_resume-openfont.tex
+# For MacFonts in the `MacFonts` directory
+xelatex -output-directory=<output-dir> deedy_resume.tex
+```
+
+### Compiling Using `vimlatex`
+
+[Vimtex](https://github.com/lervag/vimtex) is a (Neo)vim filetype plugin for
+LaTeX files that helps you write and autocompile efficiently.
+
+- vimtex runs `latexmk` by default so make sure you install one of the supported
+executables before using vimtex.
+
+#### Caveat
+
+Vimtex, by default, compiles to pdf files using `pdflatex`. To tell vimtex to
+compile with xelatex engine, add this directive on top of your tex file
+
+```tex
+%! TeX program = xelatex
+```
+
+Source: https://github.com/lervag/vimtex/issues/1141#issuecomment-397436563
+
 ## Changelog
 ### v1.2
  1. Added publications in place of societies.
