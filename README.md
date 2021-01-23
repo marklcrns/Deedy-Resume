@@ -49,13 +49,14 @@ xelatex -output-directory=<output-dir> deedy_resume-openfont.tex
 xelatex -output-directory=<output-dir> deedy_resume.tex
 ```
 
-### Compiling Using `vimlatex`
+### Compiling Using `vimtex` Vim plugin
 
 [Vimtex](https://github.com/lervag/vimtex) is a (Neo)vim filetype plugin for
 LaTeX files that helps you write and autocompile efficiently.
 
 - vimtex runs `latexmk` by default so make sure you install one of the supported
 executables before using vimtex.
+- [Great article for getting started with vimtex](https://wikimatze.de/vimtex-the-perfect-tool-for-working-with-tex-and-vim/)
 
 #### Caveat
 
