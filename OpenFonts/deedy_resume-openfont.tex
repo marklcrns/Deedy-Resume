@@ -16,16 +16,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -48,10 +48,10 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
- 
+
 \pagestyle{fancy}
 \fancyhf{}
- 
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,8 +66,9 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Debarghya}{Das}{ \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
-\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
+\namesection{Mark}{Lucernas}{
+\href{mailto:lucernas.mj@gmail.com}{lucernas.mj@gmail.com} | 858.371.8649 \\
+\href{https://github.com/marklcrns}{\bf github.com/marklcrns} | \href{https://www.linkedin.com/in/marklucernas}{\bf linkedin.com/in/marklucernas}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,82 +77,80 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.60\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
+%     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{Personal Projects}
 
-\subsection{Cornell University}
-\descript{MEng in Computer Science}
-\location{Dec 2014 | Ithaca, NY}
+\runsubsection{Generals-2.0}
+\descript{| \textbf{\href{https://github.com/marklcrns/Generals-2.0}{GITHUB}}}
+\location{Sept 2020 – Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \textbf{\href{https://libgdx.badlogicgames.com/}{libGDX}} rewrite of my first iteration \textbf{\href{https://github.com/marklcrns/java-game-of-generals}{java-game-of-generals}}.
+\item A 9x8 strategy board game aiming for a cross-platform support as well as competitive AI implementation.
+\item Single player gameplay powered by Minimax Algorithm, as well as online gaming (in progress) through Socket Programming.
+\end{tightemize}
+
+\runsubsection{Website Project}
+\descript{| \textbf{\href{https://github.com/marklcrns/CS50-Week5-Website-Project}{GITHUB}}}
+\location{Nov 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Basic website created to solidify my understanding of HTML, CSS, and JavaScript, and also for an online course project submission.
+\item Fundamental usage of Bootstrap library with CSS Grid layout approach that handles dynamic screen resizing.
+\end{tightemize}
+
+\runsubsection{Bash Scripts}
+\descript{| \textbf{\href{https://github.com/marklcrns/scripts}{GITHUB}}}
+\location{Sept 2020 - Oct 2020}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \textbf{\href{https://github.com/marklcrns/scripts/tree/master/tools/dotfiles}{Dotfiles Manager}} and \textbf{\href{https://github.com/marklcrns/scripts/tree/master/tools/git}{Local Github Repositories Manager}} bash utility scripts.
+\item Helps backing up/distribution of .dotfiles as well as simultaneous Github secure commands execution throughout multiple local repositories.
+\end{tightemize}
+
+\section{Group Projects}
+\runsubsection{The Wizard}
+\descript{| \textbf{\href{https://github.com/MiramarCISC/CISC191-SUM20-A}{GITHUB}}}
+\location{June 2019 – Aug 2019 | SDCCD | Miramar College }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Test-driven top-down shooter game.
+\item Developed the GUI of the game as well as unit testing via JUnit 5.
+\item Designed project architecture.
+\end{tightemize}
 \sectionsep
 
-\subsection{Cornell University}
-\descript{BS in Computer Science}
-\location{May 2014 | Ithaca, NY}
-College of Engineering \\
-Magna Cum Laude\\
-\location{ Cum. GPA: 3.83 / 4.0 \\
-Major GPA: 3.9 / 4.0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     WORK EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+
+\runsubsection{U.S. Navy}
+\descript{| Seaman Recruit, E3 }
+\location{2018 - 2019 | Great Lakes, IL}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Advanced Electronics Computer Field bootcamp recruit.
+\item Leadership position as a Dental Yeoman.
+\item Top 2 Division in the whole training group.
+\end{tightemize}
+{\footnotesize \textit{\textbf{( Veteran, Medically discharged ) }}}
 \sectionsep
 
-\subsection{La Martiniere for Boys}
-\location{Grad. May 2011|  Kolkata, India}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Links} 
-Facebook:// \href{https://facebook/dd}{\bf dd} \\
-Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
-LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
-YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
-Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
-Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-\subsection{Graduate}
-Advanced Machine Learning \\
-Open Source Software Engineering \\
-Advanced Interactive Graphics \\
-Compilers + Practicum \\
-Cloud Computing \\
-Evolutionary Computation \\
-Defending Computer Networks \\
-Machine Learning \\
-\sectionsep
-
-\subsection{Undergraduate}
-Information Retrieval \\
-Operating Systems \\
-Artificial Intelligence + Practicum \\
-Functional Programming \\
-Computer Graphics + Practicum \\
-{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
-Unix Tools and Scripting \\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
-\location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\runsubsection{IPS Group Inc.}
+\descript{| Parking Meter Assembler/Technician }
+\location{2017 – 2018 | San Diego, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Assembles parking meters from scratch
+\item Troubleshoot and update old parking meter models and replace dysfunctional electrical parts.
+\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,85 +159,68 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.33\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
+%     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Experience}
-\runsubsection{Facebook}
-\descript{| Software Engineer }
-\location{Jan 2015 - Present | New York, NY}
+\section{Education}
+\subsection{SDCCD}
+\descript{Undergraduate Computer Science Major}
+\location{2019 - Present | San Diego, CA}
+transfering to UCSD \\
+\location{Cum. GPA: 3.9 / 4.0}
+\location{Honors: Dean's Lister 2015 - 2016}
 \sectionsep
 
-\runsubsection{Coursera}
-\descript{| KPCB Fellow + Software Engineering Intern }
-\location{June 2014 – Sep 2014 | Mountain View, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Google}
-\descript{| Software Engineering Intern }
-\location{May 2013 – Aug 2013 | Mountain View, CA}
-\begin{tightemize}
-\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.\item Created a backbone.js-like framework for the Captions editor.\end{tightemize}
-\sectionsep
-
-\runsubsection{Phabricator}
-\descript{| Open Source Contributor \& Team Leader}
-\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
-\begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
+\subsection{Self-Education}
+\descript{Udemy | edX | MOOC}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
+%     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Researcher}
-\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+\section{Coursework}
+\subsection{Undergraduate}
+ARM Assembly \\
+Data Structures and Algorithms \\
+Introduction and intermediate Java \\
+Introduction to C++ \\
+Unix and Software Tools, and Scripting \\
+Public Speaking
 \sectionsep
 
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-\end{tabular}
+\subsection{Self-education}
+edX - Harvard CS50's Introduction to Computer Science \\
+Udemy - Introduction Artificial Neural Network and Deep Learning \\
+Udemy - Python for Data Science and Machine Learning Bootcamp \\
+Udemy - Linux Shell Scripting \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
+%     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Publications} 
-\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
+\section{Skills}
+\subsection{Technical Skills}
+\location{Proficient:}
+Java \textbullet{} Python \textbullet{} Bash \textbullet{} JavaScript
+\textbullet{} HTML \textbullet{} CSS \textbullet{} VimScript
+\textbullet{} Advanced Excel \textbullet{} Linux \textbullet{} Vim/Neovim \\
+\location{Familiar:}
+C \textbullet{} C++ \textbullet{} MySQL \textbullet{} ARM Assembly \textbullet{}
+Lua \textbullet{} Raspberry Pi
+\sectionsep
 
-\end{minipage} 
+\subsection{Soft Skills}
+\location{Outstanding:}
+Bilingual Communicator (Filipino, English) \textbullet{} Discipline
+\textbullet{} Teamwork \textbullet{} Interpersonal Skills \textbullet{}
+Leadership
+
+\end{minipage}
 \end{document}  \documentclass[]{article}

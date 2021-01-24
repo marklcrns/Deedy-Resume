@@ -90,3 +90,6 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# build outputs
+**/build
